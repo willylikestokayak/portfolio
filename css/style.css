@@ -108,11 +108,14 @@
         color: #888c91
     }
     
-    footer span {}
+    footer span {
+        color: #bd322d;
+        font-weight: bold;
+    }
     
     #resume {
         text-align: center;
         width: 100%;
-        height: 100%;
+        height: 800px;
         min-height: 500px;
     }
