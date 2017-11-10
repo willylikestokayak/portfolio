@@ -1,38 +1,65 @@
 <!DOCTYPE html>
-<html class="no-js">
+<html>
 
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Chad Coker</title>
     <link rel='stylesheet' href='css/style.css'>
+    <link href="css/materialdesignicons.min.css" media="all" rel="stylesheet" type="text/css" />
 </head>
 
 <body>
-    <header>
-        <div class='container'>
-            <div id='branding'>
-                <h1><span class='highlight'>Chad Coker</span>Full Stack Web Dev</h1>
-            </div>
-            <nav>
-                <ul>
-                    <li><a href='index.html'>Home</a></li>
-                    <li><a href='about.html'>About</a></li>
-                    <li class='current'><a href='resume.html'>Resume</a></li>
-                    <li><a href='portfolio.html'>Portfolio</a></li>
-                    <li class='current'><a href='plaintextresume.html'>.TXT Resume</a></li>
-                </ul>
-            </nav>
+    <nav>
+        <div class="nav-wrapper">
+            <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
+            <ul class="right hide-on-med-and-down">
+                <li><a href="index.html"><button class="btn waves-effect waves-medium">Home</button></a></li>
+                <li><a href="about.html"><button class="btn waves-effect waves-medium">About</button></a></li>
+                <li><a href="portfolio.html"><button class="btn waves-effect waves-medium">Portfolio</button></a></li>
+                <li><a href="resume.html"><button class="btn waves-effect waves-medium">Resume</button></a></li>
+                <li><a href="plaintextresume.html"><button class="btn waves-effect waves-medium">.TXT Resume</button></a></li>
+                <li><a class="dropdown-button" data-activates="dropdown1"><button class="btn waves-effect waves-small">Contact</button></a></li>
+            </ul>
+            <ul class="side-nav" id="mobile-demo">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">AboutMe</a></li>
+                <li><a href="portfolio.html">Portfolio</a></li>
+                <li><a href="resume.html">Resume</a></li>
+                <li><a hreft="plaintextresume.html">.TXT Resume</a></li>
+                <li class="divider"></li>
+                <li><a href="mailto:wccoker@gmail.com">Email</a></li>
+                <li><a href="http://github.com/willylikestokayak">Github</a></li>
+                <li><a href="http://www.linkedin.com/in/chad-coker/">Linkedin</a></li>
+            </ul>
+            <ul id="dropdown1" class="dropdown-content">
+                <li><a href="mailto:wccoker@gmail.com">email</a></li>
+                <li class="divider"></li>
+                <li><a href="http://github.com/willylikestokayak">github</a></li>
+                <li class="divider"></li>
+                <li><a href="http://www.linkedin.com/in/chad-coker/">linkedin</a></li>
+            </ul>
         </div>
-    </header>
-    <object id='resume' data='./img/resume.pdf' type='application/pdf'>
-    </object>
+    </nav>
+
+    <section id='showcase'>
+        <!-- <div class='container'>
+        </div> -->
+    </section>
 
     <footer>
         <p><span>Chad Coker Web Deisgn</span> Copyright &copy; 2017</p>
     </footer>
+    <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
+    <script>
+        $(".button-collapse").sideNav();
+    </script>
 
 </body>
 
