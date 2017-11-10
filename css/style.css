@@ -1,26 +1,32 @@
-    body {
-        font-family: Arial, Helvetica, sans-serif;
-        font-size: 15px;
-        line-height: 1.5;
-        padding: 0;
-        margin: 0;
-        background-color: #f4f4f4;
-    }
-    /* .container {
+/* font-family: 'Roboto Slab', serif;
+font-family: 'Roboto', sans-serif; */
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+    line-height: 1.5;
+    padding: 0;
+    margin: 0;
+    background-color: #7BACBF;
+}
+
+
+/* .container {
         width: 80%;
         margin: auto;
         overflow: hidden;
     } */
-    
-    nav {
-        background: #35424a;
-        color: #ffffff;
-        padding-top: 30px;
-        min-height: 70px;
-        border-bottom: #bd322d 3px solid;
-    }
-    
-    header a {
+
+nav {
+    background: #27586B;
+    color: #7BACBF;
+    padding-top: 30px;
+    min-height: 70px;
+    /* border-bottom: #bd322d 3px solid; */
+}
+
+
+/* header a {
         color: #ffffff;
         text-decoration: none;
         text-transform: uppercase;
@@ -60,19 +66,21 @@
     header a:hover {
         color: #cccccc;
         font-weight: bold;
-    }
-    
-    #showcase {
-        width: 100%;
-        height: 100%;
-        min-height: 400px;
-        opacity: 0.9;
-        background: url("../img/sunset.jpeg") no-repeat;
-        background-size: 100%;
-        /* text-align: center;
+    } */
+
+#showcase {
+    width: 100%;
+    height: 100%;
+    min-height: 400px;
+    opacity: 0.9;
+    background: url("../img/sunset.jpeg") no-repeat;
+    background-size: 100%;
+    /* text-align: center;
         color: #ffffff; */
-    }
-    
+}
+
+
+/*     
     #contact {
         text-align: center;
         background: #35424a;
@@ -101,25 +109,25 @@
         margin-top: 30px;
         height: 100px;
         width: 100px;
-    }
-    
-    footer {
-        color: #888c91
-    }
-    
-    footer span {
-        color: #bd322d;
-        font-weight: bold;
-    }
-    
-    #resume {
-        text-align: center;
-        width: 100%;
-        height: 800px;
-        min-height: 500px;
-    }
-    
-    .portfolio {
-        height: 300px;
-        width: 300px;
-    }
+    } */
+
+footer {
+    color: #888c91
+}
+
+footer span {
+    color: #bd322d;
+    font-weight: bold;
+}
+
+#resume {
+    text-align: center;
+    width: 100%;
+    height: 800px;
+    min-height: 500px;
+}
+
+.portfolio {
+    height: 300px;
+    width: 300px;
+}
