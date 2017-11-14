@@ -2,52 +2,84 @@
 <html>
 
 <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="description" content="">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!--Import Google Icon Font-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
+    <!--Import materialize.css-->
+    <!-- <link type="text/css" rel="stylesheet" href="css/materialize.min.css" media="screen,projection" /> -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link href="https://fonts.googleapis.com/css?family=Roboto|Roboto+Slab" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.css">
+    <script src="https://use.fontawesome.com/4750d6b9f1.js"></script>
     <link rel='stylesheet' href='css/style.css'>
-    <title>Chad Coker</title>
+    <!--Let browser know website is optimized for mobile-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 </head>
 
 <body>
     <nav>
         <div class="nav-wrapper">
             <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
-            <ul class="center hide-on-med-and-down">
-                <li><a href="index.html"><button class="btn waves-effect waves-medium">Home</button></a></li>
-                <li><a href="resume.html"><button class="btn waves-effect waves-medium">Resume</button></a></li>
-                <li><a class="dropdown-button" data-activates="dropdown1"><button class="btn waves-effect waves-small">Contact</button></a></li>
+            <ul class="left hide-on-med-and-down">
+                <li><a class="btn waves-effect waves-light" href="index.html">Home</a></li>
+                <li><a class="btn waves-effect waves-red" href="resume.html">Resume</a></li>
+                <li><a class="dropdown-button btn waves-effect waves-light" data-activates="dropdown1">Contact<i class="material-icons right">arrow_drop_down</i></a></li>
             </ul>
             <ul class="side-nav" id="mobile-demo">
                 <li><a href="index.html">Home</a></li>
                 <li><a href="resume.html">Resume</a></li>
                 <li class="divider"></li>
-                <li><a href="mailto:wccoker@gmail.com">Email</a></li>
-                <li><a href="http://github.com/willylikestokayak">Github</a></li>
-                <li><a href="http://www.linkedin.com/in/chad-coker/">Linkedin</a></li>
+                <li><i class="fa fa-envelope-square fa-3x" aria-hidden="true"><a href="mailto:wccoker@gmail.com"></a></i></li>
+                <li><i class="fa fa-github fa-3x" aria-hidden="true"><a href="http://github.com/willylikestokayak"></a></i></li>
+                <li><i class="fa fa-linkedin-square fa-3x" aria-hidden="true"><a href="http://www.linkedin.com/in/chad-coker/"></a></i></li>
             </ul>
             <ul id="dropdown1" class="dropdown-content">
-                <li><a href="mailto:wccoker@gmail.com">Email</a></li>
+                <li><i class="fa fa-envelope-square fa-3x" aria-hidden="true"><a href="mailto:wccoker@gmail.com"></a></i></li>
                 <li class="divider"></li>
-                <li><a href="http://github.com/willylikestokayak">Github</a></li>
+                <li><i class="fa fa-github fa-3x" aria-hidden="true"><a href="http://github.com/willylikestokayak"></a></i></li>
                 <li class="divider"></li>
-                <li><a href="http://www.linkedin.com/in/chad-coker/">Linkedin</a></li>
+                <li><i class="fa fa-linkedin-square fa-3x" aria-hidden="true"><a href="http://www.linkedin.com/in/chad-coker/"></a></i></li>
             </ul>
         </div>
     </nav>
+    <div class="row">
+        <div class="col s4 offset-s4 about">
+            <div class="card hoverable">
+                <div class="card-image">
+                    <img class="responsive-img" src="./img/wyd.png">
+                    <span class="card-title">WYD</span>
+                </div>
+                <div class="card-content">
+                    <p>WYM (What You Mean) utilizes the IBM Watson Tone Analyzer API to analyze tone of a user's submitted text. WYM is able to detect a range of 7 different tones and provide the user with tone feedback of the text that was provided. Tech
+                        used: Reactjs, Node.js, Mongo, Materialize. Collaborators: Justen Cracraft, Stephanie Hester, Ari Minton, Chad Coker.</p>
+                </div>
+                <div class="card-action">
+                    <a href="https://wymwatson.herokuapp.com/">WYM Live Site</a>
+                    <a href="https://github.com/justecii/project-3">Github Repo</a>
+                </div>
+            </div>
+        </div>
+    </div>
 
-    <section id='showcase'>
-        <!-- <div class='container'>
-        </div> -->
-    </section>
+    <div class="row">
+        <div class="col s4 offset-s4 about">
+            <div class="card hoverable">
+                <div class="card-image">
+                    <img class="responsive-img" src="./img/flowfinder.png">
+                    <span class="card-title">Flow Finder</span>
+                </div>
+                <div class="card-content">
+                    <p>Flow finder utilizes the USGS API to determine river levels in Washington. Tech used: Express, Node.js, Postgres, Materialize.</p>
+                </div>
+                <div class="card-action">
+                    <a href="https://flowfinder.herokuapp.com/">Flow Finder Live Site</a>
+                    <a href="https://github.com/willylikestokayak/flow-finder">Github Repo</a>
+                </div>
+            </div>
+        </div>
+    </div>
 
-    <footer>
-        <p><span>Chad Coker Web Deisgn</span> Copyright &copy; 2017</p>
+    </div>
+    </div <footer>
+    <p><span>Chad Coker Web Deisgn</span> Copyright &copy; 2017</p>
     </footer>
     <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
