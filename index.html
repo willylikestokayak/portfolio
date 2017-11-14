@@ -1,57 +1,87 @@
 <!DOCTYPE html>
 <html>
 
-<head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="description" content="">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+<!-- <head>
+    <meta charset="utf-8" />
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
+    <link type="text/css" rel="stylesheet" href="css/materialize.min.css" media="screen,projection" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link href="https://fonts.googleapis.com/css?family=Roboto|Roboto+Slab" rel="stylesheet">
     <link rel='stylesheet' href='css/style.css'>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Chad Coker</title>
+</head> -->
+
+<head>
+    <!--Import Google Icon Font-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
+    <!--Import materialize.css-->
+    <!-- <link type="text/css" rel="stylesheet" href="css/materialize.min.css" media="screen,projection" /> -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.css">
+    <script src="https://use.fontawesome.com/4750d6b9f1.js"></script>
+    <link rel='stylesheet' href='css/style.css'>
+    <!--Let browser know website is optimized for mobile-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 </head>
 
 <body>
     <nav>
         <div class="nav-wrapper">
             <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
-            <ul class="center hide-on-med-and-down">
-                <li><a href="index.html"><button class="btn waves-effect waves-medium">Home</button></a></li>
-                <li><a href="about.html"><button class="btn waves-effect waves-medium">About</button></a></li>
-                <li><a href="portfolio.html"><button class="btn waves-effect waves-medium">Portfolio</button></a></li>
-                <li><a href="resume.html"><button class="btn waves-effect waves-medium">Resume</button></a></li>
-                <li><a class="dropdown-button" data-activates="dropdown1"><button class="btn waves-effect waves-small">Contact</button></a></li>
+            <ul class="left hide-on-med-and-down">
+                <li><a class="btn waves-effect waves-light" href="portfolio.html">Projects</a></li>
+                <li><a class="btn waves-effect waves-red" href="resume.html">Resume</a></li>
+                <li><a class="dropdown-button btn waves-effect waves-light" data-activates="dropdown1">Contact<i class="material-icons right">arrow_drop_down</i></a></li>
             </ul>
             <ul class="side-nav" id="mobile-demo">
-                <li><a href="index.html">Home</a></li>
-                <li><a href="about.html">AboutMe</a></li>
-                <li><a href="portfolio.html">Portfolio</a></li>
+                <li><a href="portfolio.html">Projects</a></li>
                 <li><a href="resume.html">Resume</a></li>
                 <li class="divider"></li>
-                <li><a href="mailto:wccoker@gmail.com">Email</a></li>
-                <li><a href="http://github.com/willylikestokayak">Github</a></li>
-                <li><a href="http://www.linkedin.com/in/chad-coker/">Linkedin</a></li>
+                <li><i class="fa fa-envelope-square fa-3x" aria-hidden="true"><a href="mailto:wccoker@gmail.com"></a></i></li>
+                <li><i class="fa fa-github fa-3x" aria-hidden="true"><a href="http://github.com/willylikestokayak"></a></i></li>
+                <li><i class="fa fa-linkedin-square fa-3x" aria-hidden="true"><a href="http://www.linkedin.com/in/chad-coker/"></a></i></li>
             </ul>
             <ul id="dropdown1" class="dropdown-content">
-                <li><a href="mailto:wccoker@gmail.com">email</a></li>
+                <li><i class="fa fa-envelope-square fa-3x" aria-hidden="true"><a href="mailto:wccoker@gmail.com"></a></i></li>
                 <li class="divider"></li>
-                <li><a href="http://github.com/willylikestokayak">github</a></li>
+                <li><i class="fa fa-github fa-3x" aria-hidden="true"><a href="http://github.com/willylikestokayak"></a></i></li>
                 <li class="divider"></li>
-                <li><a href="http://www.linkedin.com/in/chad-coker/">linkedin</a></li>
+                <li><i class="fa fa-linkedin-square fa-3x" aria-hidden="true"><a href="http://www.linkedin.com/in/chad-coker/"></a></i></li>
             </ul>
         </div>
     </nav>
 
-    <section id='showcase'>
-        <!-- <div class='container'>
-        </div> -->
-    </section>
+    <div class="row">
+        <div class="col s12" id="showcase">
+            <!-- <div id="showcase"> -->
+            <h2 class="banner">Chad Coker</h2>
+            <h4 class="banner"><span>FullStack</span>WebDev</h4>
+            <!-- </div> -->
+        </div>
+    </div>
 
+    <div class="row">
+        <div class="col s6 offset-s3 about">
+            <div class="card hoverable">
+                <div class="card-image">
+                    <img class="responsive-img" src="./img/chad.jpg">
+                    <span class="card-title">About Me</span>
+                </div>
+                <div class="card-content">
+                    <p>Throughout my 10+ years of managing large-scale, multi-faceted projects, collaborating on teams and engaging with personal tech products, I am continually amazed and awestruck by the ability of thoughtfully applied technology to efficiently
+                        aid in the solution of complex and important problems. This passion leads me into the next phase of my career, and I am excited to contribute to the positive progression of the tech industry through thoughtfully designed full stack
+                        web applications to solve real world problems.</p>
+                </div>
+                <div class="card-action">
+                    <a href="portfolio.html">Portfolio Projects</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- </div> -->
     <footer>
-        <p><span>Chad Coker Web Deisgn</span> Copyright &copy; 2017</p>
+        <p><span>ChadCoker</span>Web Deisgn Copyright &copy; 2017</p>
     </footer>
     <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
